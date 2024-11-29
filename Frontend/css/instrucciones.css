@@ -1,0 +1,131 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #18386f; 
+
+}
+
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 22px;
+    color: #ffd2f4; 
+}
+
+.intro p {
+    font-size: 16px;
+    color: #b995fc;
+}
+
+.steps {
+    margin-bottom: 20px;
+}
+
+.steps h2 {
+    font-size: 24px;
+    color: #9db2d7; 
+    margin-bottom: 15px;
+}
+
+.steps ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.steps ol li {
+    margin-bottom: 15px;
+    color: #5a61c1; 
+}
+
+.steps li h3 {
+    font-size: 18px;
+    color: #ff6f61; 
+    margin-bottom: 10px;
+}
+
+.steps li p {
+    font-size: 16px;
+    color: #b995fc;
+
+}
+.thanks {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thanks h2 {
+    font-size: 22px;
+    color: #ff6f61;
+}
+
+.thanks p {
+    font-size: 16px;
+    color: #b995fc;
+}
+
+
+a {
+    color: #ffd2f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .container {
+        padding: 30px;
+        max-width: 650px;
+        margin-bottom: 20px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .steps h2 {
+        font-size: 26px;
+    }
+
+    .steps li h3 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        padding: 40px;
+        max-width: 900px;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .steps h2 {
+        font-size: 30px;
+    }
+
+    .steps li h3 {
+        font-size: 22px;
+    }
+}
+
+
+

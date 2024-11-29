@@ -1,0 +1,59 @@
+.menu {
+    display: none;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #5a61c1;
+    padding: 0px 20px 10px; 
+}
+
+.menu p {
+    margin: 0; 
+    padding-left: 3%;
+    padding-top: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-left: 2px white;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #18386f;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+    }
+
+    .cajabuscar input[type="text"] {
+        display: block;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu a {
+        font-size: 16px;
+    }
+}
+

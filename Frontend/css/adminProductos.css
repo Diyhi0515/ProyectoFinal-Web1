@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding-top: 50px;
+
+ 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    justify-content: center;
+    margin: 0 auto;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;}
+
+
+.seccion-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.seccion-logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.menu-seccion {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    padding: 0 10px;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+}
+
+.admin-section {
+    display: block;
+    width: 100%;
+    margin: 10px ;
+}
+
+.admin-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-bottom: 10px;
+}
+.productForm{
+    padding: 15px;
+}
+.admin-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+h2 {
+    font-size: 24px;
+    color: #5a61c1;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input[type="file"] {
+    cursor: pointer;
+}
+
+.form-group input[type="file"]:focus {
+    outline: none;
+    border-color: #5a61c1;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #5a61c1;
+    color: white;
+    padding: 0px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #b995fc;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form select,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5a61c1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b995fc;
+}
+
+.selected-category {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.delete-category-btn {
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 30px;
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.delete-category-btn:hover {
+    background-color: #ff1a1a;
+}
+
+
+#categoryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+#selectedCategories div {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: #e0e7ff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #5a61c1;
+    color: white;
+}
+
+table thead th {
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+table tbody tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+table tbody td {
+    padding: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+table tbody img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.editar-btn {
+    background-color: #5a61c1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.editar-btn:hover {
+    background-color: #b995fc;
+}
+
+.eliminar-btn{
+    background-color: #e74c3c;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.eliminar-btn:hover {
+    background-color: #ff6b6b;
+}

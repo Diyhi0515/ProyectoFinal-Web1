@@ -1,0 +1,188 @@
+.pedido-registro {
+    padding: 0px 20px;
+    background-color: white;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pedido-registro .registro-pedido {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.pedido-registro h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #5a61c1;
+}
+
+.pedido-registro h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #18386f;
+}
+
+.pedido-registro .productos-enviar {
+    margin-bottom: 30px;
+}
+
+.pedido-registro .producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.pedido-registro .producto img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.pedido-registro .detalles p {
+    margin: 5px 0;
+}
+
+.pedido-registro .informacion-adicional {
+    margin-bottom: 30px;
+}
+
+.pedido-registro .informacion-adicional label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pedido-registro .informacion-adicional input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pedido-registro .resumen-pago {
+    margin-bottom: 30px;
+}
+
+.pedido-registro .resumen-pago p {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.pedido-registro .acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedido-registro .acciones button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.pedido-registro .realizar-compra {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.pedido-registro .cancelar-pedido {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.total-productocantidad {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pedido-registro .cancelar-pedido:hover {
+    background-color: #18386f;
+}
+.pedido-registro .realizar-compra:hover {
+    background-color: #18386f;
+}
+
+@media (min-width: 768px) {
+    .pedido-registro .registro-pedido {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .total-productocantidad {
+        display: flex;
+        margin-left: 10%;
+    }
+
+    .pedido-registro .producto img {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+    }
+
+    .pedido-registro .producto {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        gap: 15px;
+    }
+
+    .pedido-registro .productos-enviar {
+        flex: 1 1 60%;
+        margin-right: 20px;
+    }
+
+    .pedido-registro .informacion-adicional {
+        flex: 1 1 100%;
+        margin-right: 20px;
+    }
+
+    .pedido-registro .resumen-pago {
+        flex: 1 1 100%;
+    }
+
+    .pedido-registro .acciones {
+        flex: 1 1 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pedido-registro .registro-pedido {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pedido-registro .productos-enviar {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-right: 20px;
+    }
+    .total-productocantidad {
+        display: flex;
+        padding-left: 30%;
+    }
+
+    .pedido-registro .producto img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .pedido-registro .segunda-parte {
+        margin-left: 60px;
+        width: 40%;
+    }
+
+    .pedido-registro .producto {
+        justify-content: flex-start; 
+        gap: 20px; 
+    }
+}

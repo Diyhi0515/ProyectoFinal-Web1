@@ -1,0 +1,236 @@
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-container h1 {
+    font-size: 20px;
+    color: #18386f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.perfil-container h3 {
+    font-size: 18px;
+    color: #b995fc;
+}
+
+.perfil-form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.perfil-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.perfil-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.perfil-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.perfil-form button.btn-actualizar {
+    padding: 10px;
+    background-color: #18386f;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.perfil-form button.btn-actualizar:hover {
+    background-color: #1451a5;
+}
+
+
+.imagen-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imagen-perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #18386f;
+}
+
+.imagen-perfil button.btn-change-photo {
+    padding: 10px;
+    background-color: #b995fc;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.imagen-perfil button.btn-change-photo:hover {
+    background-color: #18386f;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+
+.input-group .input-group-append .input-group-text {
+    background-color: #18386f; 
+    color: white; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px; 
+    font-size: 18px; 
+}
+
+
+.input-group .input-group-append .input-group-text:hover {
+    background-color: #45a049; 
+    color: white; 
+}
+
+
+.input-group .input-group-append .input-group-text i {
+    font-size: 16px; 
+    line-height: 1; 
+}
+
+
+.input-group .input-group-append {
+    margin-left: 10px;
+}
+
+.input-group .input-group-append .input-group-text.remove-address {
+    background-color: #F44336;
+    color: white; 
+    border-radius: 50%;
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    font-size: 18px; 
+}
+
+
+.input-group .input-group-append .input-group-text.remove-address:hover {
+    background-color: #e53935; 
+    color: white; 
+}
+
+
+.input-group .input-group-append .input-group-text.remove-address i {
+    font-size: 16px;
+    line-height: 1; 
+}
+
+.input-group .input-group-append {
+    margin-left: 10px;
+}
+
+
+
+@media (min-width: 768px) {
+    .perfil-container {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .perfil-container h1 {
+        font-size: 25px;
+    }
+
+    .imagen-perfil img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .datos-perfil {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen-perfil {
+        flex: 1 1 40%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil-form {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .perfil-form button.btn-actualizar {
+        align-self: flex-start; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .perfil-container {
+        padding: 0px 60px;
+    }
+    .perfil-container h1 {
+        font-size: 30px;
+    }
+
+
+
+    .imagen-perfil img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .perfil-form {
+        gap: 5px;
+    }
+
+    .perfil-form input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .perfil-form button.btn-actualizar, 
+    .imagen-perfil button.btn-change-photo {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+}
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <header>
+        <section class="seccion-logo">
+            <i class="fas fa-bars" id="menu-option"></i>
+
+            <div id="mobile-menu" class="mobile-menu" style="display: none;">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#" id="mobile-profile-link">Mi Perfil</a>
+                <a href="#" id="mobile-cart-link">Mi carrito</a>
+                <a href="#" id="mobile-orders-link">Mis Pedidos</a>
+                <a href="instrucciones.html">Instrucciones</a>
+            </div>
+
+            <img src="img/logo.png" alt="logo">
+            <a href="index.html" id="titulo_link"><h1 class="logo">PetGourmet<i class="fas fa-paw"></i></h1></a>
+            <div class="cajabuscar">
+                <form  id="buscarform">
+                    <fieldset>
+                        <input type="text" id="s" value="" placeholder="Buscar Alimento"  />
+                        <button class="button-submit" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </fieldset>
+                    
+                </form>
+            </div>
+            
+            <div id="user-options">
+                <div id="carrito-container" style="position: relative; display: inline-block;">
+                    <a href="#" style="color: white;" id="carrito-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <span id="carrito-count" style="display: none;">0</span>
+                </div>
+                <i class="fas fa-user" id="user-icon"></i>
+                <img id="user-profile-pic" src="https://placehold.jp/150x150.png" alt="Imagen de perfil" style="display:none; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;">
+            
+            
+                <div id="menu-perfil" class="menu-perfil" style="display: none;">
+                    <a href="miPerfil.html">Ver Perfil</a>
+                    <a href="#" id="btn-salir">Cerrar Sesión</a>
+                </div>
+            
+            
+                <div id="login-options" style="display: none;">
+                    <a href="login.html">Iniciar sesión</a>
+                    <a href="registro.html">Registrarse</a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="menu-seccion">
+            <nav class="menu">
+                <p>Tienda de comida <br> para mascotas</p>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="#" id="desktop-profile-link">Mi Perfil</a></li>
+                    <li><a href="#" id="desktop-cart-link">Mi carrito</a></li>
+                    <li><a href="#" id="desktop-orders-link">Mis Pedidos</a></li>
+                </ul>
+                <a href="instrucciones.html">Instrucciones</a>
+            </nav>
+        </section>
+    </header>
+    <main class="container-carrito">
+        <h1 class="titulo-carrito">Mi Carrito <span>(2 productos)</span></h1>
+        <table class="carrito-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="producto-info">
+                            <img src="img/producto1.jpg" alt="Producto">
+                            
+                        </div>
+                    </td>
+                    <td><p>Nombre del Producto</p></td>
+                    <td class="precio-individual">Bs 60.00</td>
+                    <td>
+                        <div class="cantidad">
+                            <button class="cantidad-btn" data-action="decrementar"> - </button>
+                            <input type="number" value="1" min="1" class="cantidad-input">
+                            <button class="cantidad-btn" data-action="incrementar">+</button>
+                        </div>
+                    </td>
+                    <td>Bs 60.00</td>
+                    <td>
+                        <button class="eliminar-btn"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    
+        <div class="acciones-carrito">
+            <a href="catalogo.html" class="btn-seguir-comprando">Seguir Comprando</a>
+            <div class="resumen">
+                <p>Subtotal: <span>Bs 0.00</span></p>
+                <p class="total-carrito">Total: <span>Bs 0.00</span></p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <section>
+            <p>&copy; 2024 PetGourmet. Todos los derechos reservados.</p>
+            <nav>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+            </nav>
+        </section>
+    </footer>
+    <script src="js/menu.js"></script> 
+    <script src="js/carrito.js"></script> 
+    <script src="js/buscar.js"></script>
+</body>
+
+</html>

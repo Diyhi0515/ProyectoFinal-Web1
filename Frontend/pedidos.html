@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pedidos.css">
+</head>
+<body>
+    <header>
+        <section class="seccion-logo">
+            <i class="fas fa-bars" id="menu-option"></i>
+
+            <div id="mobile-menu" class="mobile-menu" style="display: none;">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#" id="mobile-profile-link">Mi Perfil</a>
+                <a href="#" id="mobile-cart-link">Mi carrito</a>
+                <a href="#" id="mobile-orders-link">Mis Pedidos</a>
+                <a href="instrucciones.html">Instrucciones</a>
+            </div>
+
+            <img src="img/logo.png" alt="logo">
+            <a href="index.html" id="titulo_link"><h1 class="logo">PetGourmet<i class="fas fa-paw"></i></h1></a>
+            <div class="cajabuscar">
+                <form  id="buscarform">
+                    <fieldset>
+                        <input type="text" id="s" value="" placeholder="Buscar Alimento"  />
+                        <button class="button-submit" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </fieldset>
+                    
+                </form>
+            </div>
+            <div id="search-results" class="search-results" style="display: none;">
+                <ul id="results-list"></ul>
+            </div>
+            
+            <div id="user-options">
+                <div id="carrito-container" style="position: relative; display: inline-block;">
+                    <a href="#" style="color: white;" id="carrito-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <span id="carrito-count" style="display: none;">0</span>
+                </div>
+                <i class="fas fa-user" id="user-icon"></i>
+                <img id="user-profile-pic" src="https://placehold.jp/150x150.png" alt="Imagen de perfil" style="display:none; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;">
+            
+            
+                <div id="menu-perfil" class="menu-perfil" style="display: none;">
+                    <a href="miPerfil.html">Ver Perfil</a>
+                    <a href="#" id="btn-salir">Cerrar Sesión</a>
+                </div>
+            
+            
+                <div id="login-options" style="display: none;">
+                    <a href="login.html">Iniciar sesión</a>
+                    <a href="registro.html">Registrarse</a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="menu-seccion">
+            <nav class="menu">
+                <p>Tienda de comida <br> para mascotas</p>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="#" id="desktop-profile-link">Mi Perfil</a></li>
+                    <li><a href="#" id="desktop-cart-link">Mi carrito</a></li>
+                    <li><a href="#" id="desktop-orders-link">Mis Pedidos</a></li>
+                </ul>
+                <a href="instrucciones.html">Instrucciones</a>
+            </nav>
+        </section>
+    </header>
+
+    <main class="mis-pedidos-container">
+        <h1>Mis Pedidos</h1>
+        <table class="tabla-pedidos">
+            <thead>
+                <tr>
+                    <th>FECHA</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>ESTADO</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="footer">
+        <section>
+            <p>&copy; 2024 PetGourmet. Todos los derechos reservados.</p>
+            <nav>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+            </nav>
+        </section>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/misPedidos.js"></script>
+    <script src="js/buscar.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Administradores</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/adminProductos.css">
+
+</head>
+<body>
+    <header>
+        <section class="seccion-logo">
+
+            <img src="img/logo.png" alt="logo">
+            <a href="index.html" id="titulo_link"><h1 class="logo">PetGourmet<i class="fas fa-paw"></i></h1></a>
+
+            <section class="menu-seccion">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="adminProductos.html">Productos</a></li>
+                        <li><a href="adminCategoria.html">Categorias</a></li>
+                        <li><a href="adminAdmin.html" id="desktop-profile-link">Administradores</a></li>
+                        <li><a href="adminPedidos.html" id="desktop-cart-link">Pedidos</a></li>
+                    
+                    </ul>
+                </nav>
+            </section>
+            
+            <div id="user-options">
+                <i class="fas fa-user" id="user-icon"></i>
+            
+                <div id="menu-perfil" class="menu-perfil" style="display: none;">
+                    <a href="#" id="btn-salir">Cerrar Sesión</a>
+                </div>
+            </div>
+            
+        </section>
+       
+    </header>
+    <main class="container" style="grid-template-columns: 2fr 1fr;">
+        <section id="roles-section">
+            <h2>Gestión de Roles</h2>
+            <div id="roles-form">
+                <form id="roleForm">
+                    <label for="roleName">Nombre del Rol</label>
+                    <input type="text" id="roleName" placeholder="Nombre del rol">
+                    <p id="roleNameError" class="error-text"></p>
+                    <button type="submit" id="saveRole">Guardar Rol</button>
+                </form>
+            </div>
+            <table id="rolesTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="admins-section">
+            <h2>Gestión de Administradores</h2>
+            <div id="admins-form">
+                <form id="adminForm">
+                    <label for="adminName">Nombre</label>
+                    <input type="text" id="adminName" placeholder="Nombre">
+                    <p id="adminNameError" class="error-text"></p>
+                    
+                    <label for="adminLastName">Apellido Paterno</label>
+                    <input type="text" id="adminLastName" placeholder="Apellido Paterno">
+                    <p id="adminLastNameError" class="error-text"></p>
+
+                    <label for="adminSecondLastName">Apellido Materno</label>
+                    <input type="text" id="adminSecondLastName" placeholder="Apellido Materno">
+                    <p id="adminSecondLastNameError" class="error-text"></p>
+
+                    <label for="adminUsername">Username</label>
+                    <input type="text" id="adminUsername" placeholder="Username">
+                    <p id="adminUsernameError" class="error-text"></p>
+
+                    <label for="adminEmail">Correo</label>
+                    <input type="email" id="adminEmail" placeholder="Correo">
+                    <p id="adminEmailError" class="error-text"></p>
+
+                    <label for="adminRole">Rol</label>
+                    <select id="adminRole"></select>
+                    <p id="adminRoleError" class="error-text"></p>
+
+                    <label for="adminPassword">Contraseña</label>
+                    <input type="password" id="adminPassword" placeholder="Contraseña">
+                    <p id="adminPasswordError" class="error-text"></p>
+                    
+                    <button type="submit" id="saveAdmin">Guardar Administrador</button>
+                </form>
+            </div>
+            <table id="adminsTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Correo</th>
+                        <th>Username</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        
+    </main>
+    
+    <footer class="footer">
+        <section>
+            <p>&copy; 2024 PetGourmet. Todos los derechos reservados.</p>
+            <nav>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+            </nav>
+        </section>
+    </footer>    
+    <script src="js/adminMenu.js"></script>
+
+    <script src="js/adminAdministrador.js"></script>
+</body>
+</html>

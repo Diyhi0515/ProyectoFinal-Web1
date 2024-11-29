@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <section>
+        <div class="div_cont">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="formulario_register">
+            <h1>Registro de Usuario</h1>
+            <form id="register-form">
+                <div>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <small id="error-nombre" class="error-msg"></small>
+                </div>
+                <div>
+                    <input type="text" id="ap_paterno" placeholder="Apellido Paterno">
+                    <small id="error-ap_paterno" class="error-msg"></small>
+                </div>
+                <div>
+                    <input type="text" id="ap_materno" placeholder="Apellido Materno">
+                    <small id="error-ap_materno" class="error-msg"></small>
+                </div>
+                <div>
+                    <input type="text" id="nombre_user" placeholder="Nombre de Usuario" >
+                    <small id="error-nombre_user" class="error-msg"></small>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Correo Electrónico">
+                    <small id="error-email" class="error-msg"></small>
+                </div>
+                <div>
+                    <input type="password" id="contrasena" placeholder="Contraseña">
+                    <small id="error-contrasena" class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <label for="imageUploader">Imagen de Perfil</label>
+                    <input type="hidden" id="imageId" value="0" />
+                    <div>
+                        <input type="file" id="imageUploader" class="form-control" accept="image/*" >
+                        <small id="error-image" class="error-msg"></small>
+                    </div>
+                </div>
+                <button type="submit">Registrar</button>
+            </form>
+            <p id="msg-error-register" style="color: red; display: none;">Error en el registro. Verifica los campos.</p>
+            <a href="login.html">¿Ya tienes cuenta? Inicia sesión</a>
+        </div>
+    </section>
+
+    <script src="js/registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+<body>
+    <section>
+        <div>
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="formulario_login">
+            <h1 class="titulo_login">Iniciar Sesión</h1>
+            <form id="login-form">
+                <input type="text" id="inputUsername" name="usuario" placeholder="Usuario o Email">
+                <div class="invalid-feedback" id="validation-username" style="display:none;color: red; font-size: 0.9em;">
+                    Debe ingresar su nombre de usuario
+                </div>
+                
+                <input type="password" id="inputPassword" name="contrasena" placeholder="Contraseña">
+                <div class="invalid-feedback" id="validation-password" style="display:none;color: red; font-size: 0.9em;">
+                    Debe ingresar su contraseña
+                </div>
+                
+                <button type="submit" id="btn-login">Iniciar Sesión</button>
+            </form>
+            
+            <div id="msg-error-login" class="invalid-feedback" style="display:none;">
+                Usuario y/o Contraseña son inválidos
+            </div>
+
+            <a href="registro.html">Registrarse</a>
+        </div>
+    </section>
+
+    <script src="js/login.js"></script>
+    
+</body>
+</html>

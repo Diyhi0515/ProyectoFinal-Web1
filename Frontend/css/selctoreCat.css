@@ -1,0 +1,81 @@
+.select-container {
+    position: relative; 
+    z-index: 10; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f8f9fa;
+    padding-top: 10px;
+}
+
+.select-wrapper label {
+    font-size: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    color: #5a61c1;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+select {
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #5a61c1;
+    background-color: #5a61c1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    appearance: none; 
+}
+
+select:focus {
+    border-color: white;
+    outline: none;
+}
+
+
+select {
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+
+@media (min-width: 768px) {
+    .select-container{
+        display: none;
+        gap: 20px;
+        padding: 0px 10px;
+    }
+
+    .select-wrapper label {
+        font-size: 16px;
+    }
+
+    select{
+        width: 150px;
+    }
+    
+}
+
+
+@media (min-width: 992px) {
+    .select-container{
+        gap: 20px;
+        padding: 0px 15px;
+    }
+
+    .select-wrapper label {
+        font-size: 18px;
+    }
+
+    select{
+        width: 200px;
+    }
+}

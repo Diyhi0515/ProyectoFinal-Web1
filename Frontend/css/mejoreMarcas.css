@@ -1,0 +1,56 @@
+.mejores-marcas {
+    padding: 20px;
+    background-color: #f8f9fa; 
+    text-align: center;
+}
+
+.mejores-marcas-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5a61c1;
+}
+
+.list-marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.list-marcas img {
+    width: 70px; 
+    height: auto;
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-marcas img:hover {
+    transform: scale(1.1); 
+}
+
+.list-marcas a{
+    text-decoration: none;
+    color: white;
+    background-color: #b995fc;;
+
+}
+
+
+@media (min-width: 768px) {
+    .list-marcas img {
+        width: 150px; 
+    }
+
+}
+
+@media (min-width: 992px) {
+    .list-marcas {
+        gap: 30px;
+    }
+
+    .list-marcas img {
+        width: 200px; 
+    }
+}

@@ -1,0 +1,163 @@
+.container-detalle {
+    padding: 10px;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 8px;
+}
+.caja-cantidad{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: block;
+}
+
+.info h2 {
+    font-size: 18px;
+    color: #18386f;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: #000;
+}
+
+p.precio-detalle strong{
+    font-size: 25px;
+    color: #5a61c1;
+}
+p.precio-detalle{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #444343;
+}
+
+h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444343;
+}
+
+
+input[type="number"] {
+    width: 70px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #444343;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.btn-centar{
+    display: flex;
+    justify-content: center;
+}
+
+.carrito {
+    padding: 10px 20px;
+    background-color: #18386f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carrito:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para Tablets */
+@media (min-width: 768px) {
+    .detalle {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .imagen {
+        flex: 1;
+    }
+
+    .info {
+        flex: 1;
+        
+    }
+    .imagen img {
+        max-width: 700px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .cantidad-carrito-container {
+        align-items: flex-start; 
+    }
+
+    input[type="number"] {
+        font-size: 18px;
+    }
+
+    .carrito {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-detalle {
+        padding: 45px 100px 70px;
+    }
+
+    .detalle {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .imagen {
+        max-width: 450px; 
+    }
+
+    .imagen img {
+        max-width: 370px; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .info h2 {
+        font-size: 24px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .carrito {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}

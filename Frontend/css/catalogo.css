@@ -1,0 +1,132 @@
+.container-catalogo{
+    display: flex;
+    margin: 0 auto;
+    padding: 0px;
+}
+.productos{
+    padding: 15px;
+}
+.menu-Categorias {
+    display: none;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.menu-Categorias h1 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #18386f;
+}
+
+.menu-cat ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-cat > ul > li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.menu-cat ul li a {
+    text-decoration: none;
+    font-size: 16px; 
+    color: #18386f;
+    padding: 8px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu-cat ul li a:hover {
+    background-color: #5a61c1;
+    color: white;
+}
+
+.menu-cat ul ul {
+    display: none;
+    padding-left: 15px; 
+}
+
+.menu-cat ul li:hover > ul {
+    display: block;
+}
+
+.menu-cat ul ul li {
+    margin-bottom: 5px;
+}
+
+.menu-cat ul ul li a {
+    font-size: 14px; 
+    padding-left: 10px;
+}
+
+.menu-cat ul ul li a:hover {
+    background-color: #18386f;
+    color: white;
+}
+
+
+
+@media (min-width: 768px) {
+    #body-catalogo{
+        padding-top: 110px; 
+    }
+    .menu-Categorias {
+        display: block;
+        width: 250px;
+        padding: 20px;
+    }
+
+    .menu-Categorias h1 {
+        font-size: 24px; 
+        margin-bottom: 20px;
+    }
+
+    .menu-cat ul li a {
+        font-size: 18px; 
+        padding: 10px;
+    }
+
+    .menu-cat ul ul li a {
+        font-size: 16px; 
+        padding-left: 15px;
+    }
+
+    .productos{
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #body-catalogo{
+        padding-top: 110px;
+    }
+
+    .productos{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .menu-Categorias {
+        width: 300px; 
+        padding: 25px;
+    }
+
+    .menu-Categorias h1 {
+        font-size: 28px;
+    }
+
+    .menu-cat ul li a {
+        font-size: 20px; 
+        padding: 12px;
+    }
+
+    .menu-cat ul ul li a {
+        font-size: 18px; 
+    }
+}

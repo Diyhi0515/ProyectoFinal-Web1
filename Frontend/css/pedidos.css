@@ -1,0 +1,124 @@
+.mis-pedidos-container {
+    width: 100%;
+    height: 80vh;
+    padding: 0px 20px 20px;
+    background-color: white;
+
+    border-radius: 8px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mis-pedidos-container h1 {
+    font-size: 20px;
+    color: #18386f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla-pedidos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-pedidos th, .tabla-pedidos td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 8px;
+}
+
+.tabla-pedidos th {
+    background-color: #f4f4f4;
+    color: #18386f;
+}
+
+.tabla-pedidos td {
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+.tabla-pedidos td p {
+    margin: 5px 0;
+    font-size: 10px;
+    color: #333; 
+ 
+}
+
+.tabla-pedidos td p.estado-pendiente {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.tabla-pedidos td p.estado-en-proceso {
+    font-weight: bold;
+    color: #ff9900; 
+}
+
+.tabla-pedidos td p.estado-enviado {
+    font-weight: bold;
+    color: #00cc00; 
+}
+
+.tabla-pedidos td:last-child p {
+    color: #333; 
+}
+
+.estado-pendiente {
+    color: orange;
+    font-weight: bold;
+}
+
+.estado-en-proceso {
+    color: blue;
+    font-weight: bold;
+}
+
+.estado-enviado {
+    color: green;
+    font-weight: bold;
+}
+
+.estado-desconocido {
+    color: gray;
+    font-style: italic;
+}
+
+
+@media (min-width: 768px) {
+    .mis-pedidos-container {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+    .tabla-pedidos td p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #333; 
+    }
+
+    .tabla-pedidos th, .tabla-pedidos td {
+        padding: 15px; 
+        font-size: 14px;
+    }
+
+    .mis-pedidos-container h1 {
+        font-size: 25px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .mis-pedidos-container {
+        width: 70%;
+    }
+
+    .tabla-pedidos th, .tabla-pedidos td {
+        font-size: 16px; 
+    }
+
+    .mis-pedidos-container h1 {
+        font-size: 30px;
+    }
+}
