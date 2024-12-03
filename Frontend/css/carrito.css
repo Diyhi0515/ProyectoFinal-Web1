@@ -1,6 +1,5 @@
 .container-carrito {
     width: 90%;
-    height: 100vh;
     margin: 0px auto 20px;
     padding: 10px;
     background-color: #f9f9f9;
@@ -238,7 +237,7 @@
 @media (min-width: 1024px) {
     .container-carrito {
         max-width: 1200px;
-        margin-bottom: 130px;
+        margin-bottom: 180px;
     }
 
     .container-carrito h1 {
